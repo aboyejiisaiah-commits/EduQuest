@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduQuest</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+     <div class="side-circle" aria-hidden="true"></div>
+    <div class="hero">
+        <nav>
+            <h2 class="logo"><i class="bx bxs-graduation"></i> Edu<span>Quest</span></h2>
+            <input type="checkbox" id="hamburger" class="hamburger-checkbox" />
+            <label for="hamburger" class="hamburger">
+            </label>
+            <ul id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Take A Quiz</a></li>
+            </ul>
+        </nav>
+
+        <div class="about">
+            <h1>Your Quest For <span>More Knowledge</span></h1>
+            <h2>Starts Here.</h2>
+            <p>Answer and explore new concepts with our interactive quizzes.</p>
+            <p>Pick a subject and AI will generate lessons and quizzes to help you learn and master new topics.</p>
+
+            <div class="button1">
+                        <button onclick="openQuiz()">Take Quiz</button>
+                        <button onclick="openLesson()">Take Lesson</button>
+                        <button onclick="openTutor()">🤖 AI Tutor</button>
+            </div>
+
+            <div class="boxes">
+                <div class="box1">
+                    <h2>500</h2>
+                    <p>Questions</p>
+                </div>
+                <div class="box2">
+                    <h2>AI Text</h2>
+                    <p>Lessons</p>
+                </div>
+                <div class="box3">
+                    <h2>AI Powered</h2>
+                    <p>Quizzes</p>
+                </div>
+                <div class="box4">
+                    <h2>6</h2>
+                    <p>Subjects</p>
+                </div>
+                <div class="box5">
+                    <h2>Totally Free</h2>
+                </div>
+            </div>
+
+            <div class="edufix">
+                <h1>Education Is Broken</h1>
+                <p><span>EduQuest Fixes It.</span></p>
+            </div>
+
+            <section class="problems">
+                <h1>The Problems</h1>
+                <h5>These aren't hypothetical. They happen in classrooms.</h5>
+
+                <div class="prob1">
+                    <i class="bx bx-x"></i>
+                    <h2>Students are left behind</h2>
+                    <p>- There's no easy way to revisit concepts without embarrassment.</p>
+                    <p>- Teachers move at a fixed pace that's too slow for some and too fast for others.</p>
+                    <p>- Students who fall behind rarely catch up without serious outside intervention.</p>
+                </div>
+
+                <div class="prob2">
+                    <i class="bx bx-x"></i>
+                    <h2>Fear Stops Learning</h2>
+                    <p>- By the time a teacher notices a student struggling, it's often too late.</p>
+                    <p>- Asking questions in class can feel intimidating.</p>
+                    <p>- Students may pretend to understand rather than risk looking unintelligent.</p>
+                </div>
+
+                <div class="prob3">
+                    <i class="bx bx-x"></i>
+                    <h2>Lessons Are Boring</h2>
+                    <p>- One-size-fits-all content doesn't connect with every learning style.</p>
+                    <p>- Passive reading and note-taking aren't enough for long-term retention.</p>
+                    <p>- Without engagement, students lose interest.</p>
+                </div>
+
+                <div class="prob4">
+                    <i class="bx bx-x"></i>
+                    <h2>Learning Is Not Adaptive</h2>
+                    <p>- Standard curricula don't adapt to individual needs or pace.</p>
+                    <p>- Material rarely adjusts to prior knowledge or learning style.</p>
+                    <p>- Lessons often ignore progress and comprehension differences.</p>
+                </div>
+            </section>
+
+            <section class="solutions">
+                <h1>So we built a solution.</h1>
+                <h1>How <span>EduQuest</span> Solves Each Problem</h1>
+                <p>One platform. Problems solved. Every student, everywhere.</p>
+
+                <div class="solution1">
+                    <i class="bx bx-check"></i>
+                    <h2>Learn at Your Own Pace</h2>
+                    <p>- Pick any subject and start a quiz instantly —no schedule, no pressure.</p>
+                    <p>- Retry as many times as you want with brand-new AI-generated questions.</p>
+                    <p>- Everyone gets a private, personalized learning experience.</p>
+                </div>
+
+                <div class="solution2">
+                    <i class="bx bx-check"></i>
+                    <h2>Ask Questions Without Fear</h2>
+                    <p>- Ask your question privately to get instant, personalized feedback from AI.</p>
+                    <p>- Explore and learn from mistakes without peer pressure.</p>
+                </div>
+
+                <div class="solution3">
+                    <i class="bx bx-check"></i>
+                    <h2>Lessons That Actually Engage You</h2>
+                    <p>- AI generates lessons that matches your learning styles and interests.</p>
+                    <p>- Interactive quizzes and gamified elements make learning fun.</p>
+                    <p>- Stay motivated with content that connects to you.</p>
+                </div>
+                <div class="testimonials">
+                    <h1>What People Are Saying</h1>
+                    <div class="testimonial1">
+                        <p>"EduQuest has transformed how I learn. The AI-generated quizzes are challenging but fair, and I can retry as many times as I need without feeling embarrassed."</p>
+                        <h2>- Daniel A.</h2>
+                    </div>
+                    <div class="testimonial2">
+                        <p>"I used to dread asking questions in class, but with EduQuest, I can get instant feedback from the AI without worrying about what others think. It's been a game-changer for my confidence."</p>
+                        <h2>- Joseph O.</h2>
+                    </div>
+                    <div class="testimonial3">
+                        <p>"The lessons on EduQuest are so engaging! They adapt to my learning style and keep me interested. I've actually started looking forward to studying."</p>
+                        <h2>- Isaiah A.</h2>
+                    </div>
+                </div>
+            </section>
+            <section class=""></section>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>EduQuest</p> 
+           <p>Learn Today,Lead Tommorow NG</p>
+           <h2>
+           &copy; 2026  created with ❤️ by Quantum Coders 
+           </h2>
+           <h1><img src="school-logo.png" alt="">Testimony College</h1>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>
