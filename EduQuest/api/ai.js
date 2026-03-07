@@ -1,5 +1,3 @@
-// EduQuest — Vercel Serverless Function (Groq API)
-
 export default async function handler(req, res) {
 
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -11,8 +9,6 @@ export default async function handler(req, res) {
 
   try {
     const { system, messages } = req.body;
-
-    // Build messages with system as first message
     const groqMessages = [];
     if (system) groqMessages.push({ role: "system", content: system });
     groqMessages.push(...messages);
@@ -36,8 +32,6 @@ export default async function handler(req, res) {
     if (!response.ok) {
       return res.status(response.status).json({ error: data.error?.message || "API error" });
     }
-
-    // Convert to Anthropic-like format so quiz.js works unchanged
     const text = data.choices?.[0]?.message?.content || "";
     return res.status(200).json({ content: [{ type: "text", text }] });
 
