@@ -1,8 +1,3 @@
-// ============================================================
-// EDUQUEST — Quiz Logic
-// ============================================================
-
-// Automatically use local server when testing, Vercel function when live
 const AI_ENDPOINT = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
   ? "http://localhost:3001/api/ai"
   : "/api/ai";
@@ -110,9 +105,6 @@ function setContent(html) {
   document.getElementById("eq-content").innerHTML = html;
 }
 
-// ============================================================
-// AI API CALL — goes through proxy server
-// ============================================================
 async function callAI(messages, systemPrompt) {
   const response = await fetch(AI_ENDPOINT, {
     method: "POST",
