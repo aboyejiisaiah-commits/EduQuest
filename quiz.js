@@ -34,7 +34,7 @@ function createOverlay() {
     #eq-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.55);display:flex;align-items:center;justify-content:center;z-index:1000;padding:16px;animation:eqFadeIn 0.25s ease}
     @keyframes eqFadeIn{from{opacity:0}to{opacity:1}}
     @keyframes eqSlideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-#eq-modal{background:#fff;border-radius:20px;width:100%;max-width:560px;max-height:90vh;overflow-y:auto;padding:32px 28px 32px 28px;position:relative;animation:eqSlideUp 0.3s ease;box-shadow:0 20px 60px rgba(0,0,0,0.25)}
+#eq-modal{background:#000;border-radius:20px;width:100%;max-width:560px;max-height:90vh;overflow-y:auto;padding:32px 28px 32px 28px;position:relative;animation:eqSlideUp 0.3s ease;box-shadow:0 20px 60px rgba(0,0,0,0.25)}
 #eq-close{position:fixed;top:12px;right:12px;background:transparent;border:none;border-radius:0;width:auto;height:auto;font-size:18px;cursor:pointer;color:#333;transition:color 0.2s;font-family:inherit;box-shadow:none;outline:none}
     .eq-subject-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
     .eq-subject-btn{background:#f5f5f5;border:2px solid transparent;border-radius:14px;padding:16px 12px;text-align:center;cursor:pointer;transition:all 0.2s;font-weight:700;font-size:15px;color:#333}
