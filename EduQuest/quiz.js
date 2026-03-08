@@ -117,9 +117,6 @@ async function callAI(messages, systemPrompt) {
   return data.content.map(b => b.text || "").join("");
 }
 
-// ============================================================
-// QUIZ
-// ============================================================
 function openQuiz() {
   createOverlay();
   showSubjectPicker("quiz");
