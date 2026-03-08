@@ -35,8 +35,8 @@ function createOverlay() {
     @keyframes eqFadeIn{from{opacity:0}to{opacity:1}}
     @keyframes eqSlideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
     #eq-modal{background:#fff;border-radius:20px;width:100%;max-width:560px;max-height:90vh;overflow-y:auto;padding:32px 28px;position:relative;animation:eqSlideUp 0.3s ease;box-shadow:0 20px 60px rgba(0,0,0,0.25)}
-    #eq-close{position:absolute;top:16px;right:16px;background:#f0f0f0;border:none;border-radius:50%;width:32px;height:32px;font-size:14px;cursor:pointer;color:#333;transition:background 0.2s;font-family:inherit}
-    #eq-close:hover{background:#e0e0e0}
+    #eq-close{position:absolute;top:16px;right:16px;background:none;border:none;width:32px;height:32px;font-size:18px;cursor:pointer;color:#333;transition:color 0.2s;font-family:inherit}
+    #eq-close:hover{color:#e53935}
     .eq-subject-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
     .eq-subject-btn{background:#f5f5f5;border:2px solid transparent;border-radius:14px;padding:16px 12px;text-align:center;cursor:pointer;transition:all 0.2s;font-weight:700;font-size:15px;color:#333}
     .eq-subject-btn:hover{border-color:#635BFF;background:#f0efff}
